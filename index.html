@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ToDoList</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main id="main">
+    <div class="todo-wrapper">
+      <h1>Welcome in Todo List Application
+        <input type="text" placeholder="Search Here" id="searchListData">
+      </h1>
+
+      <div class="todo-box">
+        <div class="input-box">
+          <form>
+            <input type="text" id="user-input" placeholder="Enter Here">
+            <button type="submit" id="add-button">Add Task</button>
+          <button id="save-button">Save</button>
+          <button id="delete-all-button">Delete All</button>
+        </form>
+        </div>
+        <div id="result"> 
+          <button id="result-add-button">Add</button> 
+          <span></span>
+        </div>
+        <ul class="todo-result"></ul>
+        
+      </div>
+      
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

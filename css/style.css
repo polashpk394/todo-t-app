@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  outline: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#82C7C8, #a6bfa4);
+}
+
+.todo-wrapper {
+  width: 700px;
+  height: 100%;
+  margin: 40px auto;
+}
+
+.todo-wrapper h1 {
+  padding: 50px 0 40px 0;
+  text-align: center;
+  font-size: 40px;
+}
+
+#searchListData{
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+
+.todo-box {
+  width: 100%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid rgba(221, 221, 221, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.input-box {
+  width: 100%;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 10px 0;
+}
+#user-input {
+  display: block;
+  padding: 6px 15px;
+  margin: 0 5px;
+  width: 468px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(30, 94, 163, 0.5);
+}
+
+#add-button, #delete-all-button, #result-add-button,#save-button {
+  display: inline-block;
+  width: fit-content;
+  padding: 10px;
+  border: none;
+  width: 80px;
+  text-align: center;
+  margin: 0 5px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#add-button, #result-add-button, #save-button {
+  background: linear-gradient(to top, #21a34c, #23ad51);
+}
+
+#save-button {
+  display: none;
+}
+
+#add-button:hover, #result-add-button:hover, #save-button:hover {
+  background: linear-gradient(to top, #23ad51, #21a34c);
+}
+
+#delete-all-button {
+  background: linear-gradient(to top, #DE4942, #ee574f);
+}
+
+#delete-all-button:hover {
+  background: linear-gradient(to top, #ee574f, #DE4942);
+}
+
+ul.todo-result {
+  list-style: none;
+  padding: 0 5px;
+}
+
+ul.todo-result li {
+  width: 100%;
+  background: linear-gradient(to top, #e2e1e2, #F3F2F3);
+  padding: 8px 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+ul.todo-result li:hover {
+  background: linear-gradient(to top, #F3F2F3, #e2e1e2);
+}
+
+ul.todo-result li span {
+  width: 100%;
+  display: block;
+}
+
+
+ul.todo-result li strong {
+  float: left !important;
+  padding-right: 10px;
+  font-weight: 800;
+}
+#result {
+  width: 98.5%;
+  background: linear-gradient(to top, #e2e1e2, #F3F2F3);
+  padding: 7px 10px;
+  margin: 20px 5px 10px 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.3s;
+  display: none;
+}
+
+#result:hover {
+  background: linear-gradient(to top, #F3F2F3, #e2e1e2);
+}
+
+#result span{
+  display: block;
+  width: 570px;
+  margin-left: 10px;
+  float: left;
+}
+
+#result-add-button {
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  float: left;
+  padding: 8px;
+}
+
+.edit-button {
+  background: transparent;
+  margin: 0 5px;
+  border: none;
+  color: #25ce5e;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit-button:hover {
+  color: #05aa3c;
+  background: #fff;
+}
+
+.delete-button {
+  background: transparent;
+  margin: 0 5px;
+  border: none;
+  color: #DE4942;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-button:hover {
+  color: #d31309;
+  background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
